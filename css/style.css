@@ -46,11 +46,10 @@ body{
 /*HEADER-----------------------------------------------------------------*/
 .header{
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 .header__wrapper{
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -80,10 +79,57 @@ body{
 /*INTRO------------------------------------------------------------------*/
 .intro{
   height: 100vh;
+  z-index: 9; 
   background: url(../img/intro-bg.jpg) no-repeat center;
   background-size: cover;   
 }
-/*-----------------------------------------------------------------------*/
-
+/*ADAPTIVE---------------------------------------------------------------*/
+@media screen and (max-width: 1200px){
+  .wrapper{
+     max-width: 909px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .wrapper{
+    max-width: 775px;
+  }
+}
+@media screen and (max-width: 885px){
+  .wrapper{
+    max-width: 670px;
+  }
+}
+@media screen and (max-width: 768px){
+  .wrapper{ 
+    max-width: 580px;
+  }
+  .header__logo{
+    padding: 0 20px 0 0;
+  }
+}
+@media screen and (max-width: 720px){
+  .wrapper{ 
+    max-width: 500px;
+  }
+  .header_link{
+    font-size: 12px;
+  }
+  .header__item{
+    margin-right: 30px; 
+  }
+  .header__logo{
+    padding: 0 15px 0 0;
+  } 
+}
+/*here will be burger*/
+@media screen and (max-width: 480px){
+  .wrapper{
+  }
+  .header_link{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px){
+}
 
 /*-----------------------------------------------------------------------*/
