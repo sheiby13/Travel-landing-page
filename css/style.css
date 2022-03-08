@@ -634,8 +634,9 @@ img{
   .places__card_size_sm{
     grid-column: span 3;
   }
-  .places__link{
+  .link-view{
     background: none;
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 375px){}
@@ -674,4 +675,68 @@ img{
 }
 .tour__pic{
   box-shadow: 0px 3px 15px rgba(21, 24, 36, 0.4);
+}
+/*ADAPTIVE---------------------------------------------------------------*/
+@media screen and (max-width: 1280px){
+}
+@media screen and (max-width: 1024px){
+  .tours__tour{
+   grid-gap: 0 45px;
+  }
+  .tour__title{
+    margin-bottom: 45px;
+  }
+  .tour__text{
+    margin-bottom: 35px;
+  }
+  .tour__info{
+    padding-left: 37px;
+  }
+}
+@media screen and (max-width: 768px){
+  .tours__tour{
+   margin-bottom: 40px;
+  }
+  .tour__title{
+    margin-bottom: 25px;
+  }
+  .tour__text{
+    margin-bottom: 25px;
+  }
+  .tour__info{
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 425px){
+  .tours__tour{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .tours__tour{
+   grid-gap: 35px 0;
+  }
+  .tour__title{
+    margin: 25px 0;
+    text-align: center;
+  }
+  .tour__text{
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .tour__info{
+    padding-left: 0px;
+  }
+  .tour__pic{
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 375px){
+  .tour__title{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 320px){
+  .tour__title{
+    margin: 15px 0;
+    font-size: 24px;
+  }
 }
