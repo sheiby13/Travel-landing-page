@@ -821,3 +821,20 @@ img{
 .today__card-cta:hover,.today__card-cta:focus,.today__card-cta:active{
   background-color: #74b0ff; 
 }
+/*ADAPTIVE---------------------------------------------------------------*/
+@media screen and (max-width: 1280px){
+}
+@media screen and (max-width: 1024px){
+}
+@media screen and (max-width: 768px){
+}
+@media screen and (max-width: 425px){
+  .today__cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 375px){
+}
+@media screen and (max-width: 320px){
+}
+/*ADAPTIVE---------------------------------------------------------------*/
