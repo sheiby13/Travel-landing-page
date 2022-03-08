@@ -740,3 +740,84 @@ img{
     font-size: 24px;
   }
 }
+/*TODAY---------------------------------------------------------------*/
+.today{
+  margin-bottom: 86px;
+}
+.today__card{
+  display: flex;
+  flex-direction: column;
+}
+.today__cards{
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+}
+.today__title{
+  margin-bottom: 54px;
+}
+.today__card-pic{
+  position: relative;
+  margin-bottom: 45px;
+  box-shadow: 0px 2px 10px rgba(21, 24, 36, 0.4); 
+}
+.today__card-stats{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(21, 24, 36, .6);
+  padding: 16px 25px;
+}
+.today__card-title{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px; 
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 auto 0 0;
+}
+.today__card-title:hover{
+  color: #74b0ff; 
+}
+.today__card-likes{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #fff;
+  padding-right: 20px;
+  background: url(../img/heart-icon.svg) no-repeat right;
+  margin-right: 14px;
+}
+.today__card-comments{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #fff;
+  padding-right: 23px;
+  background: url(../img/comments.svg) no-repeat right;
+}
+.today__card-text{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+.today__card-cta{
+  width: 118px;
+  padding: 12px 19px; 
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  background-color:#1B7DFF;
+  border-color: transparent;
+  border: 0;
+  color: #ffff;
+  text-decoration: none;
+  margin: auto 0 0 0;
+}
+.today__card-cta:hover,.today__card-cta:focus,.today__card-cta:active{
+  background-color: #74b0ff; 
+}
