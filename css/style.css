@@ -481,7 +481,7 @@ img{
     background-color:#fafcff;  
   }
   .benefits__title{
-    padding: 75px;  
+    padding: 65px;  
   }
   .benefits__cards{
     padding: 0 30px; 
@@ -489,7 +489,7 @@ img{
 } 
 @media screen and (max-width: 375px){
   .benefits__title{
-    padding: 45px;  
+    padding: 35px;  
   }
 } 
 @media screen and (max-width: 320px){
@@ -498,7 +498,7 @@ img{
   }
 }
 /*PLACES-----------------------------------------------------------------*/
-.wrapper__full{
+.wrapper-full{
   max-width: 1260px; 
   margin: 0 auto;
 }
@@ -515,7 +515,7 @@ img{
 .places__title{
   margin-right: 15px;
 }
-.places__link{
+.link-view{
   text-transform: uppercase;
   font-size: 16px;
   color: #006DEF;
@@ -523,7 +523,7 @@ img{
   padding-right: 59px;
   background: url(../img/arrow.svg) no-repeat right center;
 }
-.places__link:hover,  .places__link:focus, .places__link:active{
+.link-view:hover,  .link-view:focus, .link-view:active{
   opacity: .75;
   text-decoration: none;
 }
@@ -590,17 +590,17 @@ img{
 }
 /*ADAPTIVE---------------------------------------------------------------*/
 @media screen and (max-width: 1280px){
-  .wrapper__full{
+  .wrapper-full{
     max-width: 1100px;
   }
 }
 @media screen and (max-width: 1024px){
-  .wrapper__full{
+  .wrapper-full{
     max-width: 900px;
   }
 }
 @media screen and (max-width: 768px){
-  .wrapper__full{
+  .wrapper-full{
     margin: 0 30px;
   }
   .places__card-title{
@@ -634,6 +634,9 @@ img{
   .places__card_size_sm{
     grid-column: span 3;
   }
+  .places__link{
+    background: none;
+  }
 }
 @media screen and (max-width: 375px){}
 @media screen and (max-width: 320px){
@@ -644,4 +647,31 @@ img{
     font-size: 38px;
   }
 }
-
+/*TOURS----------------------------------------------------------------*/
+.tours{
+  margin-bottom: 139px;
+}
+.tours__tour{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 108px;
+  align-items: center;
+  margin-bottom: 77px;
+}
+.tour__title{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 85px;
+}
+.tour__text{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+.tour__info{
+  padding-left: 47px;
+}
+.tour__pic{
+  box-shadow: 0px 3px 15px rgba(21, 24, 36, 0.4);
+}
